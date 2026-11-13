@@ -1,0 +1,27 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "description": "Training REST API for lab 5: GitHub Actions pipeline",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "test": "node --test --test-reporter=spec --experimental-test-coverage"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "supertest": "^7.3.2"
+  },
+  "overrides": {
+    "minimatch": "^11.0.8"
+  }
+}
