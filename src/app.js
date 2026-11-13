@@ -20,7 +20,7 @@ app.post('/tasks', (req, res) => {
   }
   const task = { id: tasks.length + 1, title: title.trim(), done: false };
   tasks.push(task);
-  return res.status(200).json(task);
+  return res.status(201).json(task);
 });
 
 module.exports = app;
